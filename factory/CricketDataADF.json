@@ -1,0 +1,9 @@
+{
+	"name": "CricketDataADF",
+	"location": "japanwest",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6f8c5821-afdf-43b6-a4d7-c26aaf289e7c",
+		"tenantId": "e14e73eb-5251-4388-8d67-8f9f2e2d5a46"
+	}
+}
