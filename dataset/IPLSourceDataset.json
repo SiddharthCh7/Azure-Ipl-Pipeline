@@ -1,0 +1,17 @@
+{
+	"name": "IPLSourceDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "IPLSourceLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {}
+	}
+}
