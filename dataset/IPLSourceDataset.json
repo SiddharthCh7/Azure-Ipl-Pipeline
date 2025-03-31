@@ -25,7 +25,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@concat('sid/',\n        dataset().endpoint,\n        if(empty(dataset().value1), '',\n        concat('/', dataset().value1)),\n        if(empty(dataset().value2), '',\n        concat(',', dataset().value2))\n)",
+					"value": "@concat('sid/',\n        dataset().endpoint,\n        if(empty(dataset().value1), '',\n        concat('/', dataset().value1)),\n        if(empty(dataset().value2), '',\n        concat(',', dataset().value2)),'.json'\n)",
 					"type": "Expression"
 				}
 			}
