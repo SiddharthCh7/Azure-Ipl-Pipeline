@@ -20,6 +20,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat(dataset().value1, '_',dataset().value2, '.json')",
+					"type": "Expression"
+				},
 				"container": "ipl-bronze"
 			}
 		},

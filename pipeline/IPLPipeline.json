@@ -106,7 +106,10 @@
 							"outputs": [
 								{
 									"referenceName": "IPLSinkDataset",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"value2": "\"random\""
+									}
 								}
 							]
 						}
