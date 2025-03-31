@@ -5,6 +5,16 @@
 			"referenceName": "IPLSinkLS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"value1": {
+				"type": "String",
+				"defaultValue": "\"random\""
+			},
+			"value2": {
+				"type": "String",
+				"defaultValue": "\"random\""
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
