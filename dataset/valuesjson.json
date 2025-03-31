@@ -1,0 +1,29 @@
+{
+	"name": "valuesjson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ValuesLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "teams_combinations.json",
+				"container": "ipl-bronze"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"value1": {
+					"type": "string"
+				},
+				"value2": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

@@ -5,11 +5,29 @@
 			"referenceName": "IPLSourceLS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"endpoint": {
+				"type": "string",
+				"defaultValue": "\"\""
+			},
+			"value1": {
+				"type": "string",
+				"defaultValue": "\"\""
+			},
+			"value2": {
+				"type": "string",
+				"defaultValue": "\"\""
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat('sid/',\n        dataset().endpoint,\n        if(empty(dataset().value1), '',\n        concat('/', dataset().value1)),\n        if(empty(dataset().value2), '',\n        concat(',', dataset().value2))\n)",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {}
