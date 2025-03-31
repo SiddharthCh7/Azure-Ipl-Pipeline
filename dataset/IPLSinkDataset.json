@@ -1,0 +1,28 @@
+{
+	"name": "IPLSinkDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "IPLSinkLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "ipl-bronze"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"value1": {
+					"type": "string"
+				},
+				"value2": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
