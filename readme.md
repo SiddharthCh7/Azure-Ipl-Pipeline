@@ -52,10 +52,13 @@ This ensures **clarity, easy retrieval, and organized storage**.
 - If `value1` or `value2` **does not exist**, it is set to `null`.
 - The **relative URL is dynamically generated** using an expression:
   ```
-  @concat('/sid/', dataset().endpoint,
-      if(empty(dataset().value1), '', concat('/', dataset().value1)),
-      if(empty(dataset().value2), '', concat(',', dataset().value2)),
-      '.json')
+  @concat('sid/',
+        dataset().endpoint,
+        if(empty(dataset().value1), '',
+                concat('/', dataset().value1)),
+        if(empty(dataset().value2), '',
+                concat(',', dataset().value2)),'.json'
+  )
   ```
   This ensures that the API is correctly called, whether it needs 0, 1, or 2 parameters.
 
