@@ -6,7 +6,7 @@ I built a **fully dynamic** pipeline in **Azure Data Factory (ADF)** that effici
 ### 🌟 Why Dynamic Pipelines Matter?
 In real-world data engineering, APIs often require **different parameters** based on the data needed. A static pipeline would mean creating a separate pipeline for each scenario—a **maintenance nightmare**! Instead, I designed a pipeline that **automates this process**, making it scalable and adaptable.
 
-![Why Dynamic Pipelines](snapshots/Success.png)
+![Why Dynamic Pipelines](snapshots/dashboard.png)
 
 ---
 
