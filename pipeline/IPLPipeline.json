@@ -108,7 +108,14 @@
 									"referenceName": "IPLSinkDataset",
 									"type": "DatasetReference",
 									"parameters": {
-										"value2": "\"random\""
+										"value1": {
+											"value": "@item().value1",
+											"type": "Expression"
+										},
+										"value2": {
+											"value": "@item().value2",
+											"type": "Expression"
+										}
 									}
 								}
 							]
