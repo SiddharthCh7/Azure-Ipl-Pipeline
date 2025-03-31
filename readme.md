@@ -84,7 +84,7 @@ This ensures **clarity, easy retrieval, and organized storage**.
 ✅ **Organized File Naming** → Ensures easy access to stored datasets.
 ✅ **Lookup + ForEach Combination** → Efficiently loops through multiple API requests.
 
-![Pipeline Success](snapshots/success.png)
+![Pipeline Success](snapshots/Success.png)
 
 ---
 
