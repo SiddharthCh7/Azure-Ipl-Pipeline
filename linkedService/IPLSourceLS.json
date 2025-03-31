@@ -1,0 +1,12 @@
+{
+	"name": "IPLSourceLS",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://sid-ipl-api.vercel.app/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
